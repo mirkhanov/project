@@ -1,7 +1,11 @@
-*{
+*::before,
+::after{
     box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
 }
@@ -11,4 +15,8 @@ li{
 input{
     outline: none;
     border: none;
+}
+button{
+    border: none;
+    outline: none;
 }

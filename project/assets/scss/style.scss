@@ -1,0 +1,22 @@
+@import'resets';
+@import 'variables';
+@import 'mods';
+@import 'fonts';
+
+.header{
+    padding-top: 40px;
+}
+.main_sec{
+    background: url(../img/main-bg.jpg) 50% 50% / 100% no-repeat;
+    height: 850px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.user_block{
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 26.5px;
+}
