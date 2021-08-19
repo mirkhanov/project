@@ -5,3 +5,19 @@ bd-grid{
     max-width: 1440px;
     margin: 0 auto;
 }
+.btn{
+    background-color: $main-color;
+    padding: 5px 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.transparent{
+    color: $transparent;
+}
+.colored{
+    color: $main-color;
+}

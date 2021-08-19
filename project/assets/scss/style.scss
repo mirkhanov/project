@@ -3,12 +3,19 @@
 @import 'mods';
 @import 'fonts';
 
+
+.container{
+    position: relative;
+}
+.logo_link{
+    cursor: pointer;
+}
 .header{
     padding-top: 40px;
 }
 .main_sec{
     background: url(../img/main-bg.jpg) 50% 50% / 100% no-repeat;
-    height: 850px;
+    height: 800px;
 }
 .nav{
     display: flex;
@@ -19,4 +26,152 @@
     background-color: #fff;
     padding: 10px 25px;
     border-radius: 26.5px;
+}
+.user_btn{
+    cursor: pointer;
+}
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 110px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.card{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    padding: 60px 60px;
+    background-color: #fff;
+    max-width: 540px;
+    &_title{
+        font-size: $bigest;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+    &_subtitle{
+        font-size: $mediumest;
+        font-weight: $medium-weight;
+        font-family: $sub-font;
+    }
+}
+.btn_title{
+    font-family: $sub-font;
+    font-size: $small;
+    font-weight: $bold;
+}
+.serv{
+    &_row{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    &_text{
+        padding-top: 88px;
+    }
+    &_columns{
+        max-width: 390px;
+    }
+    &_title{
+        font-family: $main-font;
+        font-size: $medium;
+        font-weight: $bold;
+    }
+    &_sub{
+        font-size: $smallest;
+        font-weight: $medium-weight;
+        font-family: $sub-font;
+    }
+    &_sub_sub{
+        font-family: $sub-font;
+        font-size: $small;
+        font-weight: $bold;
+    }
+}
+
+.facilities_title{
+    font-size: $big;
+    font-family: $main-font;
+}
+.fac{
+    &_row{
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    &_columns{
+        max-width: 275px;
+    }
+    &_title{
+        font-size: $md;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+    &_subtitle{
+        font-size: $ultra-small;
+        font-weight: $medium-weight;
+        font-family: $sub-font;
+        color: $transparent;
+    }
+    &_sub_sub{
+        font-family: $sub-font;
+        font-size: $small;
+        font-weight: $bold;
+
+    }
+}
+
+.join{
+    &_title{
+        font-size: $big;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+    &_subtitle{
+        font-size: $small;
+        font-family: $sub-font;
+        color: $transparent;
+    }
+}
+.comm{
+    &_title{
+        font-weight: $bold;
+        font-family: $main-font;
+        font-size: $medium;
+    }
+    &_subtitle{
+        font-family: $sub-font;
+        font-size: $ultra-small;
+        color: $transparent;
+    }
+    &_sub{
+        font-family: $sub-font;
+        font-size: small;
+    }
 }

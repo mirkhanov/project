@@ -16,30 +16,151 @@
                 <div class="navigation main-container">
                     <nav class="nav">
                         <div class="logo">
-                            <img src="assets/icons/cube.svg" alt="cube">
+                           <a class="logo_link"> <img src="assets/icons/cube.svg" alt="cube"></a>
                         </div>
                         <div class="user_block">
-                            <img src="assets/icons/arrow.svg" alt="arrow" class="user_arrow">
-                            <img src="assets/icons/Group.svg" alt="user" class="user_prof">
+                            <div class="dropdown">
+                                <button class="user_btn dropbtn" onclick="myFunction()"> <img
+                                        src="assets/icons/arrow.svg" alt="arrow" class="user_arrow">
+                                    <img src="assets/icons/Group.svg" alt="user" class="user_prof">
+                                </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </div>
                         </div>
                     </nav>
                 </div>
             </header>
+        </section>
 
+        <section class="card_section">
             <div class="card">
                 <div class="card_contaimer main-container">
                     <div class="card_text">
-                        <p class="card_title">Find out how we can save your time in Backpacking in Europe</p>
-                        <p class="card_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget scelerisque amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id consectetur. </p>
-                        <button class="card_btn">
-                            <img src="assets/icons/globe.svg" alt="">
-                            Explore
+                        <p class="card_title">Find out how we can <span class="colored">save your time</span> in
+                            Backpacking in Europe</p>
+                        <p class="card_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id
+                            eget scelerisque amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id
+                            consectetur. </p>
+                        <button class="btn">
+                            <img src="assets/icons/globe.svg" alt="" class="btn_ico">
+                            <p class="btn_title">Explore</p>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="body">
+            <div class="body_container main-container">
+                <div class="services">
+                    <div class="serv_row bd-grid">
+                        <div class="serv_columns">
+                            <img src="assets/img/img1.jpg" alt="">
+                            <div class="serv_text">
+                                <p class="serv_title">Promoting your territory towards foreign tourists </p>
+                                <p class="serv_sub transparent">EasyCamper wants to promote the excellence of Italian
+                                    food and wine, art, culture and the economy. </p>
+                                <p class="serv_sub_sub colored">Discover the places linked to your area
+                                    that you can link to your structure</p>
+                            </div>
+                        </div>
+                        <div class="serv_columns">
+                            <img src="assets/img/img2.jpg" alt="">
+                            <div class="serv_text">
+                                <p class="serv_title">Additional services designed for the needs of campers</p>
+                                <p class="serv_sub transparent">Travelling often means that you dont have time to
+                                    organise excursions along your route. EasyCamper takes care of that! </p>
+                                <p class="serv_sub_sub colored">Discover the Guided Tours and additional
+                                    services that you can link to your structure</p>
+                            </div>
+                        </div>
+                        <div class="serv_columns">
+                            <img src="assets/img/img3.jpg" alt="">
+                            <div class="serv_text">
+                                <p class="serv_title">Promoting your territory towards foreign tourists </p>
+                                <p class="serv_sub transparent">EasyCamper wants to promote the excellence of Italian
+                                    food and wine, art, culture and the economy. </p>
+                                <p class="serv_sub_sub colored">Discover the places linked to your area
+                                    that you can link to your structure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facilities">
+                    <h2 class="facilities_title">Making your facility known is our priority</h2>
+                    <div class="fac_row bd-grid">
+                        <div class="fac_columns">
+                            <img src="assets/icons/tick.svg" alt="">
+                            <p class="fac_title">Choose the type of stop</p>
+                            <p class="fac_subtitle">Select the type of stopover you are ordering from Equipped Area,
+                                Camping and Agricamping</p>
+                            <p class="fac_sub_sub colored">Show me more</p>
+                        </div>
+                        <div class="fac_columns">
+                            <img src="assets/icons/a-tick.svg" alt="">
+                            <p class="fac_title">Describe your structure</p>
+                            <p class="fac_subtitle">Describe thee property, location and nearby attractions</p>
+                            <p class="fac_sub_sub colored">Show me more</p>
+                        </div>
+                        <div class="fac_columns">
+                            <img src="assets/icons/square.svg" alt="">
+                            <p class="fac_title">Build your showcase</p>
+                            <p class="fac_subtitle">Add photos, videos and descriptions Define the price of each type of
+                                that make your propety truly</p>
+                            <p class="fac_sub_sub colored">Show me more</p>
+                        </div>
+                        <div class="fac_columns">
+                            <img src="assets/icons/calendar.svg" alt="">
+                            <p class="fac_title">Prices and Availability</p>
+                            <p class="fac_subtitle">pitch and configure the availablity
+                                calendar.</p>
+                            <p class="fac_sub_sub colored">Show me more</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="community">
+                    <div class="join">
+                        <p class="join_title">Join the community campervan sites managers.</p>
+                        <p class="join_subtitle">Discover all the equibbed areas in Italy. Find the shop with all the services for you and your camper.</p>
+                        <button class="btn">
+                            <img src="assets/icons/play'.svg" alt="">
+                            <p class="btn_title">Start</p>
+                        </button>
+                    </div>
+
+                    <div class="comm_row">
+                        <div class="comm_columns">
+                            <img src="assets/img/1.jpg" alt="">
+                            <p class="comm_title">Lucciano</p>
+                            <p class="comm_subtitle">Rome</p>
+                            <p class="comm_sub colored">View the Site</p>
+                        </div>
+                        <div class="comm_columns">
+                            <img src="assets/img/2.jpg" alt="">
+                            <p class="comm_title">Cremonesi</p>
+                            <p class="comm_subtitle">Florence</p>
+                            <p class="comm_sub colored">View the Site</p>
+                        </div>
+                        <div class="comm_columns">
+                            <img src="assets/img/3.jpg" alt="">
+                            <p class="comm_title">Beneventi</p>
+                            <p class="comm_subtitle">Venice</p>
+                            <p class="comm_sub colored">View the Site</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
