@@ -30,6 +30,7 @@ button {
 }
 
 .bd-grid {
+  display: -ms-grid;
   display: grid;
 }
 
@@ -162,11 +163,13 @@ button {
   background-color: #fff;
   max-width: 540px;
 }
+
 .card_title {
   font-size: 39px;
   font-weight: 700;
   font-family: "Merriweather", serif;
 }
+
 .card_subtitle {
   font-size: 20px;
   font-weight: 400;
@@ -184,27 +187,32 @@ button {
 }
 
 .serv_row {
-  grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+  -ms-grid-columns: (minmax(386px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
   -webkit-column-gap: 19px;
-     -moz-column-gap: 19px;
           column-gap: 19px;
 }
+
 .serv_text {
   padding-top: 88px;
 }
+
 .serv_columns {
   max-width: 390px;
 }
+
 .serv_title {
   font-family: "Merriweather", serif;
   font-size: 24px;
   font-weight: 700;
 }
+
 .serv_sub {
   font-size: 16px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
+
 .serv_sub_sub {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -219,22 +227,27 @@ button {
 }
 
 .fac_row {
-  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  -ms-grid-columns: (minmax(256px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
+
 .fac_columns {
   max-width: 275px;
 }
+
 .fac_title {
   font-size: 22px;
   font-weight: 700;
   font-family: "Merriweather", serif;
 }
+
 .fac_subtitle {
   font-size: 14px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .fac_sub_sub {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -244,11 +257,13 @@ button {
 .join {
   max-width: 325px;
 }
+
 .join_title {
   font-size: 36px;
   font-weight: 700;
   font-family: "Merriweather", serif;
 }
+
 .join_subtitle {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -276,16 +291,19 @@ button {
       flex-wrap: wrap;
   gap: 50px;
 }
+
 .comm_title {
   font-weight: 700;
   font-family: "Merriweather", serif;
   font-size: 24px;
 }
+
 .comm_subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .comm_sub {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -308,7 +326,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
           column-gap: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -329,34 +346,39 @@ button {
   padding-top: 90px;
   background-color: #F7F7F7;
 }
+
 .footer_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
           column-gap: 120px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
 .footer_logo_text {
   max-width: 305px;
 }
+
 .footer_title {
   margin: 0;
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 24px;
 }
+
 .footer_bigtitle {
   margin-top: 16px;
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 48px;
 }
+
 .footer_links {
   display: block;
 }
+
 .footer_about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,56 +417,86 @@ button {
   padding-left: 48px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1025px) {
+  .nav {
+    padding: 0 20px;
+  }
+  .serv_row {
+    padding: 0 20px;
+    justify-items: center;
+  }
+  .facilities {
+    padding: 0 20px;
+    justify-items: center;
+  }
+  .community {
+    padding: 50px 20px 0 20px;
+  }
+  .join {
+    padding-bottom: 70px;
+  }
+  .serv_columns {
+    padding-top: 50px;
+  }
+  .fac_row {
+    gap: 50px;
+  }
+  .advant {
+    padding-bottom: 0;
+  }
+  .advantages {
+    padding: 20px;
+  }
+  .main_row {
+    padding: 70px 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 993px) {
   .main-container {
     max-width: 993px;
   }
+  .advant {
+    padding-bottom: 0;
+  }
 }
+
 @media screen and (max-width: 769px) {
   .container {
     text-align: center;
   }
-
   .serv_columns {
-    padding: 60px 50px 0 50px;
+    padding: 200px 50px 0 50px;
   }
-
   .fac_columns {
     padding-top: 60px;
   }
-
   .comm_columns {
     padding-top: 50px;
   }
-
   .advant_columns {
     padding-top: 50px;
   }
-
   .advantages {
     padding-bottom: 60px;
   }
-
   .community {
     padding-top: 70px;
+    display: -ms-grid;
     display: grid;
     justify-items: center;
   }
-
   .facilities_title {
     padding-top: 70px;
   }
-
   .footer_about {
     display: block;
     text-align: center;
     line-height: 30px;
   }
-
   .about_links {
     display: block;
   }
-
   .footer_logo_text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,60 +510,70 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-
   .footer {
     padding: 20px;
   }
-
   .footer_row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 70px;
   }
-
   .comm_row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .fac_row {
     justify-items: center;
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
-
   .join {
+    display: -ms-grid;
     display: grid;
     justify-items: center;
   }
-
   .card {
-    margin-top: 380px;
+    margin-top: 90px;
+    left: 15%;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: #afaeae;
+    display: -ms-grid;
+    display: grid;
   }
-
+  .services {
+    padding-top: 30px;
+  }
   .serv_row {
+    display: -ms-grid;
     display: grid;
     justify-items: center;
   }
-
   .header {
     padding: 20px;
   }
-
   .main_row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .main_sec {
     background: url(../img/main-bg.jpg) 80% 100%/cover no-repeat;
   }
-
   .advantages {
     padding: 50px;
   }
-
   .facilities {
     padding: 50px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .card {
+    color: #fff;
+  }
+  .serv_columns {
+    padding-top: 400px 50px 0 50px;
   }
 }

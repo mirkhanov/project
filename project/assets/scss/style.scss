@@ -276,10 +276,46 @@
     color: #000;
     padding-left: 48px;
 }
-
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1025px){
+    .nav{
+        padding: 0 20px;
+    }
+    .serv_row{
+        padding: 0 20px;
+        justify-items: center;
+    }
+    .facilities{
+        padding: 0 20px;
+        justify-items: center;
+    }
+    .community{
+        padding: 50px 20px 0 20px;
+    }
+    .join{
+        padding-bottom: 70px;
+    }
+    .serv_columns{
+        padding-top: 50px;
+    }
+    .fac_row{
+        gap: 50px;
+    }
+    .advant{
+        padding-bottom: 0;
+    }
+    .advantages{
+        padding: 20px;
+    }
+    .main_row{
+        padding: 70px 20px 0 20px;
+    }
+}
+@media screen and (max-width: 993px){
     .main-container{
         max-width: 993px;
+    }
+    .advant{
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 769px){
@@ -287,7 +323,7 @@
         text-align: center;
     }
     .serv_columns{
-        padding: 60px 50px 0 50px;
+        padding: 200px 50px 0 50px;
     }
     .fac_columns{
         padding-top: 60px;
@@ -328,19 +364,28 @@
     }
     .footer_row{
         justify-content: center;
+        gap: 70px;
     }
     .comm_row{
         justify-content: center;
     }
     .fac_row{
         justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
     .join{
         display: grid;
         justify-items: center;
     }
     .card{
-        margin-top: 380px;
+        margin-top: 90px;
+        left: 15%;
+        background-color: rgba(1, 1, 1, 0.3);
+        color: rgb(175, 174, 174);
+        display: grid;
+    }
+    .services{
+        padding-top: 30px;
     }
     .serv_row{
         display: grid;
@@ -360,5 +405,13 @@
     }
     .facilities{
         padding: 50px;
+    }
+}
+@media screen and (max-width: 426px){
+    .card{
+        color: #fff;
+    }
+    .serv_columns{
+        padding-top: 400px 50px 0 50px;
     }
 }
